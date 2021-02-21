@@ -32,9 +32,10 @@ body {
     background: #A13D8C;
     border: solid 5px #fff;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 .top_wrap{
-    width: auto;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     background: url(img/fffr.gif);
