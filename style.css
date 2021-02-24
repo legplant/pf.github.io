@@ -2,10 +2,10 @@
 
 * {
     font-family: 'Cabin', sans-serif;
-    image-rendering: pixelated;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 a {
@@ -24,7 +24,7 @@ body {
     height: 100%;
     background: url(img/papp.gif);
     background-size: cover;
-
+    image-rendering: pixelated;
 }
 
 .wrap {
@@ -35,6 +35,7 @@ body {
     border: solid 5px #fff;
     padding-bottom: 50px;
     overflow: hidden;
+    image-rendering: auto;
 }
 
 .top_wrap {
@@ -46,7 +47,7 @@ body {
     background-position: center bottom;
     background-size: cover;
     border: solid 5px #fff;
-
+    image-rendering: pixelated;
 }
 
 @media (min-width: 1000px) {
@@ -123,13 +124,120 @@ nav h2 {
     margin: 20px auto;
     width: 60%;
 }
-.works_introduction dl{
+
+.works_introduction dl {
     padding: 20px 0;
 }
-.works_introduction dt, dd{
+
+.works_introduction dt,
+dd {
     text-align: left;
 }
 
-.works_introduction .textdeco{
+.works_introduction .textdeco {
     background: #ccc;
+}
+
+/*skills*/
+.skills_box {
+    display: flex;
+    background: #fff;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.skills_innerbox {
+    background: fff;
+    border: #fff solid;
+    width: 80%;
+    min-width: 50%;
+    text-align: center;
+}
+
+
+.skills_imgbox {
+    width: 15%;
+    height: 100px;
+}
+
+.skillbar {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    width: 100%;
+    background: #eee;
+    height: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12) inset;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.skillbar-bar {
+    height: 20px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.skillbar-html .skillbar-title {
+    background: #d35400;
+}
+
+.skillbar-html .skillbar-bar {
+    background: #e67e22;
+}
+
+.skillbar-css .skillbar-title {
+    background: #0C73B8;
+}
+
+.skillbar-css .skillbar-bar {
+    background: #268DD2;
+}
+
+.skillbar-js .skillbar-title {
+    background: #E5A228;
+}
+
+.skillbar-js .skillbar-bar {
+    background: #FEBB42;
+}
+
+@media (min-width: 1200px) {
+    .skills_innerbox {
+    width: 50%;
+    }
+    .skillbar {
+        width: 70%;
+    }
 }

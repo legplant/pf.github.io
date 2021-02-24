@@ -10,129 +10,213 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../misc/animate.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/skill.bars.jquery.js"></script>
 </head>
+<script>
+    jQuery(function($) {
+        $('.skillbar').skillBars({
+            from: 20, // バーの動くスタート位置
+            speed: 4000, // 動くスピード
+            interval: 100, // 動き始めるまでの時間
+        });
+    });
+
+</script>
 
 <body>
-    <div class="wrap animate__animated animate__slideInDown">
+    <div class="wrap ">
         <header>
             <div class="animate__animated animate__fadeInUp">
                 <h1 class="name">Skills</h1>
             </div>
             <nav class="animate__animated animate__fadeIn">
                 <div class="flexcont">
-                    <h2><a href="../index.html">Top</a></h2>
-                    <h2><a href="">About</a></h2>
-                    <h2><a href="">Works</a></h2>
-                    <h2><a href="">Skills</a></h2>
-                    <h2><a href="">Contact</a></h2>
+                <h2><a href="../index.html">Top</a></h2>
+                <h2><a href="../About/about.html">About</a></h2>
+                <h2><a href="../works/works.html">Works</a></h2>
+                <h2><a href="skills.html">Skills</a></h2>
+                <h2><a href="../contact/contact.html">Contact</a></h2>
                 </div>
             </nav>
         </header>
         <main>
             <div class="works_subtitle">
-                WEB
+               
             </div>
-            <div class="works_innerbox">
-                <div class="works_img">
-                    <div>title</div>
-                    <img src="img/coffeetumb.jpg" alt="">
-                    <div class="works_introduction">
-                        <dl>
-                            <dt><span class="textdeco">概要</span></dt>
-                            <dd>架空のカフェ森田彦コーヒのwebページ</dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">制作範囲</span></dt>
-                            <dd>ヒアリング、ディレクション、デザイン</dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">使用ツール</span></dt>
-                            <dd>XD/Brackets/Photoshop/Illustrator/Blender/Dimension</dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">テーマ</span></dt>
-                            <dd>ノスタルジックでもあり新しくもある憩いを堪能できるカフェ</dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">ターゲット</span></dt>
-                            <dd>オープンして１年ほど。ぼちぼち順調に来てるがさらに集客を伸ばしたいのでホームページを新規で開設したいとの注文 客層は幅広く取り込みたい</dd>
-                        </dl>
 
-                        <dl>
-                            <dt><span class="textdeco">デザインコンセプト</span></dt>
-                            <dd>新しさとノスタルジックというテーマの元、ニューモーフィズムとローポリ3D素材を生かしてカフェのサイトを作成しました。Blenderで3Dモデリングを行い素材を作成しています。<br>
-                                Illustratorでロゴを作成しPhotoshopを使って看板をレタッチ、コラージュしたりとソフトウェアを総合的に使いwebサイトを作成しました。
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">URL</span></dt>
-                            <dd><a href="cafe/index.html" target="_blank" rel=”noopener noreferrer”>https://legplant.github.io/pf.github.io/works/cafe/index.html</a></dd>
-                        </dl>
+            <div class="skills_box">
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/html-5.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="80">
+                        <div class="skillbar-title">HTML5</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/css-3.svg">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="80">
+                        <div class="skillbar-title">CSS3</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/javascript.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="50">
+                        <div class="skillbar-title">JS</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/brackets.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="80">
+                        <div class="skillbar-title">Brackets</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/photoshop.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="90">
+                        <div class="skillbar-title">Photoshop</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/illustrator.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="70">
+                        <div class="skillbar-title">Illustrator</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/after-effects.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="70">
+                        <div class="skillbar-title">AfterEffects</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/premier.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="60">
+                        <div class="skillbar-title">Premier</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/experience.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="50">
+                        <div class="skillbar-title">Xd</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/blender.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="60">
+                        <div class="skillbar-title">Blender</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/dotnet.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="80">
+                        <div class="skillbar-title">VB.Net</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/catia.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="90">
+                        <div class="skillbar-title">CATIA V5</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/3d-printer.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="70">
+                        <div class="skillbar-title">3D Printer</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
+                    </div>
+                </div>
+                                <div class="skills_innerbox">
+                    <p>
+                        <span>
+                            <img class="skills_imgbox" src="img/Visual_Studio_Icon.png" alt="">
+                        </span>
+                    </p>
+                    <div class="skillbar skillbar-html" data-percent="70">
+                        <div class="skillbar-title">Visual Studio</div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent"></div>
                     </div>
                 </div>
             </div>
-            
-             <div class="works_subtitle">
-                3DCG
-            </div>
-            <div class="works_innerbox">
-                <div class="works_img">
-                    <div>title</div>
-                    <img src="img/ramen.png" alt="">
-                    <img src="img/floppy.png" alt="">
-                    <div class="works_introduction">
-                        <dl>
-                            <dt><span class="textdeco">概要</span></dt>
-                            <dd>架空のカフェ森田彦コーヒのwebページ</dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">制作範囲</span></dt>
-                            <dd>ヒアリング、ディレクション、デザイン</dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">使用ツール</span></dt>
-                            <dd>XD/Brackets/Photoshop/Illustrator/Blender/Dimension</dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">テーマ</span></dt>
-                            <dd>ノスタルジックでもあり新しくもある憩いを堪能できるカフェ</dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">ターゲット</span></dt>
-                            <dd>オープンして１年ほど。ぼちぼち順調に来てるがさらに集客を伸ばしたいのでホームページを新規で開設したいとの注文 客層は幅広く取り込みたい</dd>
-                        </dl>
 
-                        <dl>
-                            <dt><span class="textdeco">デザインコンセプト</span></dt>
-                            <dd>新しさとノスタルジックというテーマの元、ニューモーフィズムとローポリ3D素材を生かしてカフェのサイトを作成しました。Blenderで3Dモデリングを行い素材を作成しています。<br>
-                                Illustratorでロゴを作成しPhotoshopを使って看板をレタッチ、コラージュしたりとソフトウェアを総合的に使いwebサイトを作成しました。
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><span class="textdeco">URL</span></dt>
-                            <dd><a href="cafe/index.html" target="_blank" rel=”noopener noreferrer”>https://legplant.github.io/pf.github.io/works/cafe/index.html</a></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div class="works_innerbox">
-                <div class="works_img">
-                    <div>title</div>
-                    <img src="img/06cde42e-2d75-4c1c-94aa-d33e9ed6f2bb.jpg" alt="">
-                    <div class="works_introduction">
-                        texttexttexttexttexttexttexttexttexttexttexttexttexttext
-                    </div>
-                </div>
-            </div>
-            <div class="works_innerbox">
-                <div class="works_img">
-                    <div>title</div>
-                    <img src="img/06cde42e-2d75-4c1c-94aa-d33e9ed6f2bb.jpg" alt="">
-                    <div class="works_introduction">
-                        texttexttexttexttexttexttexttexttexttexttexttexttexttext
-                    </div>
-                </div>
-            </div>
+
         </main>
         <footer>
 
