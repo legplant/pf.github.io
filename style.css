@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 a {
@@ -22,7 +22,7 @@ a {
 body {
     width: 100%;
     height: 100%;
-    background: url(img/papp.gif);
+    background: url(img/papp2.gif);
     background-size: cover;
     image-rendering: pixelated;
 }
@@ -31,8 +31,8 @@ body {
     width: 100%;
     /*    height: 100vh;*/
     margin: 0 auto;
-    background: #A13D8C;
-    border: solid 5px #fff;
+    background: #FFCFAB;
+    border: solid 1px #01516C;
     padding-bottom: 50px;
     overflow: hidden;
     image-rendering: auto;
@@ -46,7 +46,7 @@ body {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
-    border: solid 5px #fff;
+    border: solid 1px #01516C;
     image-rendering: pixelated;
 }
 
@@ -66,14 +66,15 @@ img {
 .name {
     width: 70%;
     font-size: 4em;
+    background: #01516C;
     margin-bottom: 10px;
-    color: #fff;
+    color: #FFCFAB;
 }
 
 
 nav h2 {
     font-size: 3em;
-    color: #fff;
+    color: #01516C;
     margin: 0.2em;
 
 }
@@ -93,13 +94,18 @@ nav h2 {
     }
 
 }
+/*About*/
+.intro_box{
+    margin: 0 auto;
+    width: 40%;
+}
 
 /*myworks*/
 .works_innerbox {
     width: 95%;
     /*    min-width :350px;*/
 
-    background: #fff;
+    background: #FFCFAB;
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -107,7 +113,8 @@ nav h2 {
 .works_subtitle {
     text-align: center;
     font-size: 3em;
-    color: #fff;
+    color: #01516C;
+    font-weight: bold;
 }
 
 .works_img {
@@ -141,16 +148,17 @@ dd {
 /*skills*/
 .skills_box {
     display: flex;
-    background: #fff;
+    background: #FFCFAB;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px;
 }
 
 
 .skills_innerbox {
     background: fff;
-    border: #fff solid;
+
     width: 80%;
     min-width: 50%;
     text-align: center;
@@ -192,6 +200,7 @@ dd {
 
 .skillbar-bar {
     height: 20px;
+    margin: 0 20px;
     width: 0px;
     background: #6adcfa;
     border-radius: 3px;
@@ -235,8 +244,9 @@ dd {
 
 @media (min-width: 1200px) {
     .skills_innerbox {
-    width: 50%;
+        width: 50%;
     }
+
     .skillbar {
         width: 70%;
     }
