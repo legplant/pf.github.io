@@ -137,9 +137,9 @@ nav h2 {
     padding: 20px 0;
 }
 
-.works_introduction dt,
-dd {
+.works_introduction dt,dd {
     text-align: left;
+    word-wrap: break-word;
 }
 
 .works_introduction .textdeco {
