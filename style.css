@@ -101,179 +101,198 @@ nav h2 {
     width: 40%;
 }
 
-/*myworks*/
-.works_innerbox {
-    width: 95%;
-    /*    min-width :350px;*/
-
-    background: #FFCFAB;
-    margin: 0 auto;
-    padding-bottom: 50px;
+.image_me {
+    margin: auto
 }
 
-.works_subtitle {
-    text-align: center;
-    font-size: 3em;
-    color: #01516C;
-    font-weight: bold;
+.image_me img {
+    max-width: 100%;
 }
 
-.works_img {
-    text-align: center;
+@media (max-width: 1200px) {
+    .intro_box {
+        width: 80%;
+    }
 
-}
-
-.works_img img {
-    width: 95%;
-    image-rendering: auto;
-}
-
-.works_introduction {
-    margin: 20px auto;
-    width: 60%;
-}
-
-.works_introduction dl {
-    padding: 20px 0;
-}
-
-.works_introduction dt,dd {
-    text-align: left;
-    word-wrap: break-word;
-}
-
-.works_introduction .textdeco {
-    background: #ccc;
-}
-
-/*skills*/
-.skills_box {
-    display: flex;
-    background: #FFCFAB;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-
-.skills_innerbox {
-    background: fff;
-
-    width: 80%;
-    min-width: 50%;
-    text-align: center;
-}
-
-
-.skills_imgbox {
-    width: 15%;
-    height: 100px;
-}
-
-.skillbar {
-    text-align: left;
-    position: relative;
-    display: inline-block;
-    margin: 15px 0;
-    width: 100%;
-    background: #eee;
-    height: 20px;
-    border-radius: 3px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12) inset;
-}
-
-.skillbar-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: bold;
-    font-size: 13px;
-    color: #ffffff;
-    background: #6adcfa;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 0 20px;
-    height: 20px;
-    line-height: 20px;
-}
-
-.skillbar-bar {
-    height: 20px;
-    margin: 0 20px;
-    width: 0px;
-    background: #6adcfa;
-    border-radius: 3px;
-    display: inline-block;
-}
-
-.skill-bar-percent {
-    position: absolute;
-    right: 10px;
-    top: 0;
-    font-size: 11px;
-    height: 20px;
-    line-height: 20px;
-    color: #ffffff;
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.skillbar-html .skillbar-title {
-    background: #d35400;
-}
-
-.skillbar-html .skillbar-bar {
-    background: #e67e22;
-}
-
-.skillbar-css .skillbar-title {
-    background: #0C73B8;
-}
-
-.skillbar-css .skillbar-bar {
-    background: #268DD2;
-}
-
-.skillbar-js .skillbar-title {
-    background: #E5A228;
-}
-
-.skillbar-js .skillbar-bar {
-    background: #FEBB42;
-}
-
-@media (min-width: 1200px) {
-    .skills_innerbox {
+    .image_me {
         width: 50%;
+        padding: 0 auto;
+    }
+
+    /*myworks*/
+    .works_innerbox {
+        width: 95%;
+        /*    min-width :350px;*/
+
+        background: #FFCFAB;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .works_subtitle {
+        text-align: center;
+        font-size: 3em;
+        color: #01516C;
+        font-weight: bold;
+    }
+
+    .works_img {
+        text-align: center;
+
+    }
+
+    .works_img img {
+        width: 95%;
+        image-rendering: auto;
+    }
+
+    .works_introduction {
+        margin: 20px auto;
+        width: 60%;
+    }
+
+    .works_introduction dl {
+        padding: 20px 0;
+    }
+
+    .works_introduction dt,
+    dd {
+        text-align: left;
+        word-wrap: break-word;
+    }
+
+    .works_introduction .textdeco {
+        background: #ccc;
+    }
+
+    /*skills*/
+    .skills_box {
+        display: flex;
+        background: #FFCFAB;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+
+    .skills_innerbox {
+        background: fff;
+
+        width: 80%;
+        min-width: 50%;
+        text-align: center;
+    }
+
+
+    .skills_imgbox {
+        width: 15%;
+        height: 100px;
     }
 
     .skillbar {
-        width: 90%;
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        margin: 15px 0;
+        width: 100%;
+        background: #eee;
+        height: 20px;
+        border-radius: 3px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12) inset;
     }
-}
 
-/*contact*/
-.Contact_box {
-    text-align: center;
-    background: #FFCFAB;
-}
+    .skillbar-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        font-size: 13px;
+        color: #ffffff;
+        background: #6adcfa;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0 20px;
+        height: 20px;
+        line-height: 20px;
+    }
 
-.form_inner {
-    position: relative;
-    width: 100%;
-    height: 800px;
-    overflow-y: scroll;
-}
+    .skillbar-bar {
+        height: 20px;
+        margin: 0 20px;
+        width: 0px;
+        background: #6adcfa;
+        border-radius: 3px;
+        display: inline-block;
+    }
 
-.form_inner iframe {
-    image-rendering: pixelated;
-    background-image: url(contact/img/papp.gif);
-    background-repeat: no-repeat;
-    background-size: 150%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+    .skill-bar-percent {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        font-size: 11px;
+        height: 20px;
+        line-height: 20px;
+        color: #ffffff;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+    .skillbar-html .skillbar-title {
+        background: #d35400;
+    }
+
+    .skillbar-html .skillbar-bar {
+        background: #e67e22;
+    }
+
+    .skillbar-css .skillbar-title {
+        background: #0C73B8;
+    }
+
+    .skillbar-css .skillbar-bar {
+        background: #268DD2;
+    }
+
+    .skillbar-js .skillbar-title {
+        background: #E5A228;
+    }
+
+    .skillbar-js .skillbar-bar {
+        background: #FEBB42;
+    }
+
+    @media (min-width: 1200px) {
+        .skills_innerbox {
+            width: 50%;
+        }
+
+        .skillbar {
+            width: 90%;
+        }
+    }
+
+    /*contact*/
+    .Contact_box {
+        text-align: center;
+        background: #FFCFAB;
+    }
+
+    .form_inner {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        overflow-y: scroll;
+    }
+
+    .form_inner iframe {
+        image-rendering: pixelated;
+        background-image: url(contact/img/papp.gif);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
