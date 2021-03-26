@@ -110,15 +110,15 @@ nav h2 {
 }
 
 @media (max-width: 1200px) {
-    .intro_box {
+    .About_box .intro_box {
         width: 80%;
     }
 
-    .image_me {
+    .About_box .image_me {
         width: 50%;
         padding: 0 auto;
     }
-
+}
     /*myworks*/
     .works_innerbox {
         width: 95%;
