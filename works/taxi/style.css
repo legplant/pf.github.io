@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #00AEBA;
+    font-size: 20px;
+}
+.slick-slide{
+    outline:none;
+}
+.body {
+    width: 100vh;
+}
+
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*header*/
+.indx_hed {
+    text-align: center;
+    line-height: 2;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.indx_hed img {
+    max-width: 100vh;
+}
+
+.indx_hed p {}
+
+/*header*/
+
+/*main*/
+
+/*intro*/
+.intro {
+    /*    background: #fff7e3;*/
+    margin-top: 50px;
+}
+
+
+.first_intr {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.head_catch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-image: url(img/p0251_l.jpg);
+    background-size: cover;
+
+}
+
+.catch_text {
+    width: 50vh;
+    margin: 50px;
+}
+
+
+
+.head_catch p {
+    padding: 0 0 50px 0;
+    font-size: 2em;
+    width: 100%;
+    line-height: 1.5;
+}
+.head_catch h2{
+    width: 100%;
+}
+.head_catch img {
+    width: 100%;
+    max-width: 500px;
+}
+.ft_tel{
+    width: 80vh;
+    margin: auto;
+}
+.tel_box {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    margin: 0 50px;
+    justify-content: flex-end;
+}
+
+
+.tel_inner {
+
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    border: solid 2px #000;
+}
+
+
+.tel_box div {
+    text-align: center;
+}
+
+.tel_box div p {
+    font-size: 1em;
+}
+
+.tel_box aside {
+    font-size: 0.6em;
+}
+
+.tel_box div .tel_num {
+    font-size: 2.5em;
+}
+
+.fade{
+    width: 75vh;
+    margin: auto;
+}
+.fade img{
+    width: 70vh;
+    margin: auto;
+}
+/*intro*/
+/*service*/
+.service {
+    background-image: url(img/dots.png);
+    background-repeat: repeat;
+}
+
+.h_sub {
+    text-align: center;
+    padding: 100px 0 ;
+    /*    background-image: url(img/textbg.svg);*/
+    background-size: cover;
+}
+.h_sub_inner{
+    display: inline-block;
+    background: #fff;
+}
+.h_sub p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.h_sub h2 {
+    font-size: 3em;
+}
+
+.service dl {}
+
+.service dt {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.service dd {
+    padding: 2em;
+}
+
+.flex_service {
+    display: flex;
+    justify-content: center;
+    padding: 0 100px 50px 50px;
+    background: #fff;
+}
+
+.flex_service2 {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    
+}
+
+.service_image img {
+    width: 50vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service_text {
+    display: flex;
+    width: 50%;
+    padding: 0 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    background: #fff;
+}
+
+.service_text h3 {
+    font-size: 2em;
+    border-bottom: solid 3px #52ff7a;
+    margin: 50px 0;
+
+}
+
+/*measures*/
+
+.measures h2 {
+    text-align: center;
+    font-size: 3em;
+    
+    color: #fff;
+    padding: 20px;
+    background-image: url(img/textbg.svg);
+    background-size: cover;
+    /*    border-bottom: solid 3px #1ae349;*/
+}
+
+.measures img {
+    height: 500px;
+}
+
+.measures div {
+    padding: 5%;
+    margin: 150px 0;
+    text-align: center;
+}
+
+/*plan*/
+
+.plan{
+    background-image: url(img/pattern.png);
+    background-repeat: repeat;
+    
+}
+.plan_cont {
+    border: 10px solid #555;
+    border-radius: 10px;
+    padding: 50px 0;
+    position: relative;
+    margin: 150px auto;
+    width: 70%;
+background: #fff;
+
+}
+
+.plan_name {
+    color: #333;
+    display: inline-block;
+    background: #fff;
+    border: 3px solid;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: -1.5em;
+    left: 10px;
+}
+
+.plan_time {
+    font-size: 1.5em;
+    color: #333;
+    padding-top: 3em;
+    display: inline;
+    border-bottom: solid 10px;
+    border-color: #ffea49;
+}
+.plan_img{
+    text-align: center;
+    padding: 50px;
+}
+.plan_img img {
+    width: 50%;
+}
+.plan_naiyo{
+    text-align: center;
+    font-size: 2em;
+    padding: 2em;
+}
+.plan_price {
+    padding: 2em;
+    text-align: right;
+    border-bottom: 3px dotted #999;
+    font-size: 1.5em;
+}
+
+.plan_price span {
+    color: #ff484f;
+    font-size: 1.5em;
+}
+
+
+
+.plan_price img {
+    width: 2em;
+}
+
+.timeline {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.timeline p {
+    color: #999;
+    font-size: 1.5em;
+}
+
+.timeline p::after {
+    content: '';
+    width: 2em;
+    height: 2em;
+    margin: 1em auto;
+
+    background-size: cover;
+    background-image: url(img/allowdown.svg);
+    display: block;
+    vertical-align: middle;
+}
+
+.timeline p:last-child:after {
+    content: none;
+}
+.plan_link{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    
+}
+.plan_link p{
+    font-size: 2em;
+    color: #fff;
+    display: inline-block;
+    background: #1ae349;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 0 0 rgb(109, 109, 109);
+}
+
+.plan_noti{
+    text-align: center;
+    font-size: 1.5em;
+}
+.paymentbox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.pay_image img{
+    max-width: 500px;
+    
+}
+.pay_image{
+    max-width: 500px;
+    
+}
+.pay_text{
+    line-height: 2;
+}
+.pay_text h2{
+    font-size: 2em;
+}
+
+.pay_text p{
+    margin-bottom: 2em;
+}
+
+/*footer*/
+footer{
+    border-top: 3px dotted #ddd;
+    padding: 150px 0;
+    background: #fff6af;
+}
+
+footer h2{
+  
+}
+.tel_box2 {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    justify-content: flex-start;
+}
+
+
+.tel_inner2 {
+
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    border: solid 2px #000;
+}
+
+.ft_tel h2{
+    font-size: 30px;
+}
+.tel_box2 div {
+    text-align: center;
+}
+
+.tel_box2 div p {
+    font-size: 1em;
+}
+
+.tel_box2 aside {
+    font-size: 0.6em;
+}
+
+.tel_box2 div .tel_num2 {
+    font-size: 2.5em;
+}
+
+
+@media (max-width: 750px) {
+    * {
+        font-size: 18px;
+    }
+
+    .wrap {
+        width: 100vh;
+    }
+
+    .head_catch {
+        flex-direction: column;
+    }
+
+    .head_catch h2 {
+        font-size: 2.5em;
+    }
+    .catch_text {
+    width: 80vh;
+    }
+    .tel_dummy {
+        width: 0;
+    }
+
+    .service img {}
+
+    .service h2 {
+        font-size: 2.5em;
+    }
+
+    .flex_service {
+        flex-direction: column;
+        padding: 100px 0;
+        width: 90%;
+        margin: auto;
+        
+
+    }
+
+    .flex_service2 {
+        flex-direction: column-reverse;
+    }
+
+    .service_text {
+        width: 100%;
+        margin: auto;
+    }
+
+    .service_image {
+        text-align: center;
+    }
+
+    .measures img {
+        height: 300px;
+    }
+
+    
+
+    .plan_cont::before {
+        font-size: 1.5em;
+        top: -1em;
+    }
+    .plan_cont {
+        width: 90%;
+    }
+    .plan_img img {
+        max-width: 100%;
+    }
+    .pay_image{
+        margin: auto;
+    }
+    .paymentbox{
+        flex-direction: column;
+        line-height: 2;
+    }
+    .pay_text{
+        margin: auto;
+    }
+}
